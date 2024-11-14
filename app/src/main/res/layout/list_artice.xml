@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Картинка слева -->
+    <ImageView
+        android:id="@+id/articleIV"
+        android:layout_width="88dp"
+        android:layout_height="84dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/image_desc" />
+
+    <!-- Линеар лейаут с текстами справа -->
+    <LinearLayout
+        android:id="@+id/article_info"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <!-- Первый текст -->
+        <TextView
+            android:id="@+id/articleDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apr 19, 2021, 12:00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Второй текст -->
+        <TextView
+            android:id="@+id/articleTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long text for theme  news long text for theme  news long text for theme  news"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
